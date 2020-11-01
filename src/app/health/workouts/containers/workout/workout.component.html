@@ -1,0 +1,25 @@
+<div class="workout" *ngIf="data$ | async as data">
+  <div class="workout__title">
+    <h1>
+      <img src="assets/img/workout.svg" />
+      <span *ngIf="!data.isLoading">
+        {{ data.workout?.name ? "Edit" : "Create" }} workout
+      </span>
+      <span *ngIf="data.isLoading"> Loading... </span>
+    </h1>
+  </div>
+
+  <workout-form
+    *ngIf="!data.isLoading"
+    [workout]="data.workout"
+    (create)="onAddWorkout($event)"
+    (update)="onUpdateWorkout($event)"
+    (remove)="onRemoveWorkout($event)"
+  >
+  </workout-form>
+
+  <message *ngIf="data.isLoading">
+    <img src="assets/img/loading.svg" />
+    Fetching workout...
+  </message>
+</div>
