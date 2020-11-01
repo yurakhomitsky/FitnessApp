@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "fitness-app-639c6"
+  },
+  "targets": {
+    "fitness-app-639c6": {
+      "hosting": {
+        "angular-project-fit": [
+          "fitness-app-639c6"
+        ]
+      }
+    }
+  }
+}
