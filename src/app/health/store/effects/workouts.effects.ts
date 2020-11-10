@@ -7,7 +7,7 @@ import { catchError, map, switchMap, tap, withLatestFrom } from 'rxjs/operators'
 import { AuthStoreService } from '../../../auth/store/services/auth.store.service';
 import * as WorkoutsActions from '../actions/workouts.actions';
 import { WorkoutsService } from '../../shared/services/workouts.service';
-import { Workout } from '../../shared/interfaces/Workout.interface';
+import { Workout } from '../../shared/interfaces/models/Workout.interface';
 
 // tslint:disable: typedef
 
@@ -41,7 +41,7 @@ export class WorkoutsEffects {
             return WorkoutsActions.loadAllWorkoutsSuccess({ workouts: serializedWorkouts });
           }),
           catchError(({ message }) => {
-            return of(WorkoutsActions.loadWorkoutFailure({ errorMessage: message }));
+            return of(WorkoutsActions.loadWorkoutsFailure({ errorMessage: message }));
           })
         )),
       );

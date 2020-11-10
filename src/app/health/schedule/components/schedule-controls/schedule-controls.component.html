@@ -1,0 +1,9 @@
+<div class="controls">
+  <button type="button" (click)="moveDate(offset - 1)">
+    <img src="assets/img/chevron-left.svg" alt="" />
+  </button>
+  <p>{{ selected | date: "mediumDate" }}</p>
+  <button type="button" (click)="moveDate(offset + 1)">
+    <img src="assets/img/chevron-right.svg" alt="" />
+  </button>
+</div>

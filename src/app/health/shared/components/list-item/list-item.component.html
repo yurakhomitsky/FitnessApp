@@ -1,8 +1,4 @@
 <div class="list-item">
-  <!-- <a [routerLink]="getRoute(item)">
-    <p class="list-item__name">{{ item.name }}</p>
-    <p class="list-item__ingredients">{{ item.ingredients }}</p>
-  </a> -->
   <ng-container
     [ngTemplateOutlet]="itemTemplate"
     [ngTemplateOutletContext]="{ $implicit: item }"

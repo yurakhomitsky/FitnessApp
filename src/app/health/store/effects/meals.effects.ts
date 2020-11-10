@@ -5,7 +5,7 @@ import { Actions, createEffect, ofType } from '@ngrx/effects';
 import { of } from 'rxjs';
 import { catchError, map, switchMap, tap, withLatestFrom } from 'rxjs/operators';
 import { AuthStoreService } from '../../../auth/store/services/auth.store.service';
-import { Meal } from '../../shared/interfaces/Meal.interface';
+import { Meal } from '../../shared/interfaces/models/Meal.interface';
 import { MealsService } from '../../shared/services/meals.service';
 import * as MealsActions from '../actions/meals.actions';
 

@@ -4,11 +4,9 @@ import { MealsState } from '../reducers/meals.reducer';
 import { loadAllMeals, createMeal, removeMeal, loadMeal, resetCurrentMeal, updateMeal } from '../actions/meals.actions';
 import { Observable } from 'rxjs';
 import { selectAllMeals, selectIsLoadingMeals, selectMeal } from '../selectors/meals.selectors';
-import { Meal } from '../../shared/interfaces/Meal.interface';
+import { Meal } from '../../shared/interfaces/models/Meal.interface';
 
-@Injectable({
-  providedIn: 'root'
-})
+@Injectable()
 export class MealsStoreService {
   constructor(private store: Store<MealsState>) { }
 

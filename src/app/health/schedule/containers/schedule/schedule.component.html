@@ -1,1 +1,16 @@
-<p>schedule works!</p>
+<div class="schedule">
+  <schedule-calendar
+    [date]="date$ | async"
+    [items]="schedule$ | async"
+    (changeSection)="onChangeSection($event)"
+    (changeDate)="onChangeDate($event)"
+  ></schedule-calendar>
+
+  <schedule-assign
+    *ngIf="selectedSection$ | async as selectedSection"
+    [section]="selectedSection"
+    [list]="list$ | async"
+    (updateAssigned)="onUpdateAssigned($event)"
+    (cancel)="closeAssign()"
+  ></schedule-assign>
+</div>

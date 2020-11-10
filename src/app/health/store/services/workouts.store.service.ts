@@ -1,15 +1,13 @@
 import { Injectable } from '@angular/core';
 import { select, Store } from '@ngrx/store';
 import { Observable } from 'rxjs';
-import { Workout } from '../../shared/interfaces/Workout.interface';
 // tslint:disable-next-line: max-line-length
 import { createWorkout, loadAllWorkouts, loadWorkout, removeWorkout, resetCurrentWorkout, updateWorkout } from '../actions/workouts.actions';
 import { WorkoutsState } from '../reducers/workouts.reducer';
 import { selectAllWorkouts, selectIsLoadingWorkouts, selectWorkout } from '../selectors/workouts.selectors';
+import { Workout } from '../../shared/interfaces/models/Workout.interface';
 
-@Injectable({
-  providedIn: 'root'
-})
+@Injectable()
 export class WorkoutsStoreService {
   constructor(private store: Store<WorkoutsState>) { }
 

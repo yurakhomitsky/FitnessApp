@@ -12,6 +12,4 @@ import { WorkoutPipe } from './pipes/workout.pipe';
   exports: [ListItemComponent, MessageComponent, JoinPipe, WorkoutPipe],
   providers: [],
 })
-export class SharedModule {
-
-}
+export class SharedModule { }

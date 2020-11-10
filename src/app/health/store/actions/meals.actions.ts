@@ -1,5 +1,5 @@
 import { createAction, props } from '@ngrx/store';
-import { Meal } from '../../shared/interfaces/Meal.interface';
+import { Meal } from '../../shared/interfaces/models/Meal.interface';
 
 
 export const loadAllMeals = createAction(

@@ -1,9 +1,9 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { combineLatest, Observable, Subscription } from 'rxjs';
-import { Workout } from '../../../shared/interfaces/Workout.interface';
 import { WorkoutsStoreService } from '../../../store/services/workouts.store.service';
 import { filter, map, tap } from 'rxjs/operators';
 import { ActivatedRoute, Params } from '@angular/router';
+import { Workout } from '../../../shared/interfaces/models/Workout.interface';
 
 @Component({
   selector: 'app-workout',

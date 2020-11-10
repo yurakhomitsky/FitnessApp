@@ -1,6 +1,7 @@
-import { Workout } from '../../shared/interfaces/Workout.interface';
+
 import { createReducer, on, Action } from '@ngrx/store';
 import * as WorkoutsActions from '../actions/workouts.actions';
+import { Workout } from '../../shared/interfaces/models/Workout.interface';
 
 export interface WorkoutsState {
   workoutsList: Workout[];

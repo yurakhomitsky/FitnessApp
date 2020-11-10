@@ -1,7 +1,7 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
 import { MealsStoreService } from '../../../store/services/meals.store.service';
-import { Meal } from '../../../shared/interfaces/Meal.interface';
+import { Meal } from '../../../shared/interfaces/models/Meal.interface';
 
 @Component({
   selector: 'meals',

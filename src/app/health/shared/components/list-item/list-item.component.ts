@@ -1,6 +1,6 @@
 import { ChangeDetectionStrategy, Component, ContentChild, EventEmitter, Input, OnInit, Output, ViewEncapsulation } from '@angular/core';
-import { Meal } from '../../interfaces/Meal.interface';
-import { Workout } from '../../interfaces/Workout.interface';
+import { Meal } from '../../interfaces/models/Meal.interface';
+import { Workout } from '../../interfaces/models/Workout.interface';
 
 @Component({
   selector: 'list-item',
@@ -21,10 +21,6 @@ export class ListItemComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-  }
-
-  public getRoute(item: Meal): string[] {
-    return [`../meals`, item.key];
   }
 
   public toggle(): void {

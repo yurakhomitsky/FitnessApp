@@ -2,7 +2,7 @@ import { Component, EventEmitter, Input, OnChanges, OnInit, Output, SimpleChange
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Observable } from 'rxjs';
 import { distinctUntilChanged } from 'rxjs/operators';
-import { Workout } from '../../../shared/interfaces/Workout.interface';
+import { Workout } from '../../../shared/interfaces/models/Workout.interface';
 
 @Component({
   selector: 'workout-form',

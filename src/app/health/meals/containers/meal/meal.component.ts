@@ -1,7 +1,7 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { ActivatedRoute, Params } from '@angular/router';
 import { filter, tap, map } from 'rxjs/operators';
-import { Meal } from '../../../shared/interfaces/Meal.interface';
+import { Meal } from '../../../shared/interfaces/models/Meal.interface';
 import { MealsStoreService } from '../../../store/services/meals.store.service';
 import { combineLatest, Observable, Subscription } from 'rxjs';
 

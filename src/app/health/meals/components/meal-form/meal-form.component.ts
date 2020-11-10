@@ -1,6 +1,6 @@
 import { ChangeDetectionStrategy, Component, EventEmitter, Input, OnChanges, OnInit, Output, SimpleChange, SimpleChanges } from '@angular/core';
 import { FormArray, FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
-import { Meal } from '../../../shared/interfaces/Meal.interface';
+import { Meal } from '../../../shared/interfaces/models/Meal.interface';
 
 @Component({
   selector: 'meal-form',

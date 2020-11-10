@@ -1,6 +1,6 @@
 import { Action, createReducer, on } from '@ngrx/store';
 import * as MealsActions from '../actions/meals.actions';
-import { Meal } from '../../shared/interfaces/Meal.interface';
+import { Meal } from '../../shared/interfaces/models/Meal.interface';
 
 export interface MealsState {
   mealsList: Meal[];

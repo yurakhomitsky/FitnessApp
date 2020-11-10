@@ -3,6 +3,7 @@ import { Observable, Subscription } from 'rxjs';
 import { AuthService } from './auth/shared/services/auth/auth.service';
 import { AuthStoreService } from './auth/store/services/auth.store.service';
 import { shareReplay } from 'rxjs/operators';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-root',
